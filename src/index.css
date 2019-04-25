@@ -12,3 +12,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.livescoreDiv {
+	margin-top: 40px;
+	font-weight: bold;
+}
+
+.livescoreDivHeading{
+	font-weight: bold;
+}
+.livescoreLeagueInfo {
+	padding: 2px 4px;
+	color: #aaa;
+	font-size: 14px;
+	border: solid 1px #666;
+	background: #333;
+	line-height: 24px;
+	margin-top: 20px;
+	height: 30px;
+}
+
+.livescoreStatus {
+	float: right;
+}
+
+.livescoreScoreInfo {
+	color: #00f;
+	text-align: center;
+}
+
+.livescoreTeamInfo {
+	background: #cfcfcf;
+	color: #000;
+	border-bottom: solid 1px #666;
+	line-height: 24px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.postsDisplayDiv {
+	margin-top: 40px;
+}
+
+.postsListDiv {
+	line-height: 24px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.postsListDiv :hover{
+	color: #00f;
+}
+
+.carouselCaption h3{
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.postFormDiv {
+	margin-top: 30px;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+.scroll {
+	height: 325px;
+	overflow: scroll;
+}
+
+.ml-auto {
+	float: right;
+}
+
+.header {
+	height: 90px;
+}
+
+.menu {
+	float: right;
+}
+.aboutme {
+	margin-left: 30px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="theme-color" content="#000000" />
+	<link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>React App</title>
+	<style>
+		.aboutme {
+			margin-left: 30px;
+			margin-top: 30px;
+		}
+
+		.webservice-info {
+			margin-left: 10px;
+		}
+
+		.navbar-nav {
+			float: left;
+		}
+
+		footer {
+			background-color: #555;
+			color: white;
+			padding: 15px;
+		}
+	</style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div>
+		<div>
+			<header class="header">
+				<div class="header">
+					<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+						<a href="/" class="navbar-brand"> Soccer Mania </a>
+						<button type="button" class="navbar-toggler">
+							<span class="navbar-toggler-icon"></span>
+						</button><div class="collapse navbar-collapse">
+						<ul class="ml-auto navbar-nav">
+							<li class="nav-item">
+								<a href="/" class="nav-link" >Home</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+		</div>
+		<div class="aboutme">
+			<div >
+				<h4> <u> About Me </u> </h4>
+				<p> I am Vineet James and I like to learn new things.
+				</p>
+				<br/>
+			</div>
+			<div>
+				<h5><u> For Developers: List of Webservices </u></h5>
+
+				<h6> 1. Get all posts </h6>
+				<div class="webservice-info">
+					<p>HTTP GET request: https://soccer-backend.herokuapp.com/posts.json</p>
+					<p>Response data in JSON Format</p>
+					<p>Response status code: 200</p>
+					<div style="border: 1px black solid;width:500px;">
+						<p style="padding-left: 5px;"> {</p>
+						<p style="padding-left: 15px;">	"id": Number, </p>
+						<p style="padding-left: 15px;">	"title": "String",</p>
+						<p style="padding-left: 15px;">	"article": "String",</p>
+						<p style="padding-left: 15px;">	"likes": 2,</p>
+						<p style="padding-left: 15px;">	"created_at": "String",</p>
+						<p style="padding-left: 15px;">	"updated_at": "String",</p>
+						<p style="padding-left: 15px;">	"comments": [</p>
+						<p style="padding-left: 20px;">	  {</p>
+						<p style="padding-left: 30px;">		"id": Number,</p>
+						<p style="padding-left: 30px;">		"commenter": "String",</p>
+						<p style="padding-left: 30px;">		"body": "String",</p>
+						<p style="padding-left: 30px;">		"post_id": Number,</p>
+						<p style="padding-left: 30px;">		"created_at": "String",</p>
+						<p style="padding-left: 30px;">		"updated_at": "String"</p>
+						<p style="padding-left: 20px;">	  }</p>
+						<p style="padding-left: 15px;">	]</p>
+						<p style="padding-left: 5px;">}</p>
+					</div>
+				</div>
+				<br/>
+				<h6> 2. Post new comments </h6>
+				<p>HTTP POST request: https://soccer-backend.herokuapp.com/posts/${PostID}/comments.json</p>
+				<p>Post data in JSON Format</p>
+				<p>Response status code: 200</p>
+				<div style="border: 1px black solid;width:500px;">
+					<p style="padding-left: 5px;"> {<p>
+					<p style="padding-left: 15px;">"commenter": "String",
+					<p style="padding-left: 15px;">"body": "String",
+					<p style="padding-left: 5px;">	}</p>
+				</div>
+				<br/>
+
+			</div>
+		</div>
+		<footer class="container-fluid text-center">
+			<p> Soccer Mania website by Vineet James. Please check more info about me and developer page <a target="_blank" href="aboutme.html"> here</a></p>
+		</footer>
+    </div>
+  </body>
+</html>
